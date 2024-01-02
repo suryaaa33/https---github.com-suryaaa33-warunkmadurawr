@@ -19,7 +19,6 @@ public class BST {
             root.left = insertRec(root.left, barang);
         else if (barang.harga > root.barang.harga)
             root.right = insertRec(root.right, barang);
-            rawr;
 
         return root;
     }
