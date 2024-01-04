@@ -30,7 +30,6 @@ public class mainMadurawr {
 
                     Barang barangBaru = new Barang(namaBarang, hargaBarang, jumlahBarang);
                     keranjang.tambahBarangKeKeranjang(barangBaru);
-                
                     System.out.println("Barang berhasil ditambahkan ke keranjang.");
                     break;
                 case 2:

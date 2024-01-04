@@ -16,30 +16,6 @@ public class KeranjangBelanja {
         this.harga = harga;
     }
 
-    public String getNamaBarang() {
-        return namaBarang;
-    }
-
-    public void setNamaBarang(String namaBarang) {
-        this.namaBarang = namaBarang;
-    }
-
-    public int getJumlah() {
-        return jumlah;
-    }
-
-    public void setJumlah(int jumlah) {
-        this.jumlah = jumlah;
-    }
-
-    public int getHarga() {
-        return harga;
-    }
-
-    public void setHarga(int harga) {
-        this.harga = harga;
-    }
-
     public List<Barang> getDaftarBarang() {
         return keranjang;
     }
@@ -50,14 +26,6 @@ public class KeranjangBelanja {
             totalHarga += barang.getHarga() * barang.getJumlah();
         }
         return totalHarga;
-    }
-
-    public KeranjangBelanja copy(List<Barang> keranjang) {
-        KeranjangBelanja copiedKeranjang = new KeranjangBelanja();
-        for (Barang barang : keranjang) {
-            copiedKeranjang.tambahBarangKeKeranjang(new Barang(barang.getNamaBarang(), barang.getHarga(), barang.getJumlah()));
-        }
-        return copiedKeranjang;
     }
     
     public void checkout(KeranjangBelanja keranjang) {

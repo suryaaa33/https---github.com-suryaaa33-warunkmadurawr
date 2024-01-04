@@ -10,15 +10,26 @@ public class Barang {
     }
 
     public int getHarga() {
-        
         return harga;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
     }
 
     public int getJumlah() {
         return jumlah;
     }
 
+    public void setJumlah(int jumlah) {
+        this.jumlah = jumlah;
+    }
+
     public String getNamaBarang() {
         return nama;
+    }
+
+    public void setNamaBarang(String namaBarang) {
+        this.nama = namaBarang;
     }
 }

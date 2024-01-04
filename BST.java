@@ -47,6 +47,6 @@ public class BST {
 
         return getTotalPendapatanTokoRekursif(node.left) +
                 getTotalPendapatanTokoRekursif(node.right) +
-                node.warungmadura.getTotalPendapatan();
+                (node.warungmadura != null ? node.warungmadura.getTotalPendapatan() : 0);
     }
 }
