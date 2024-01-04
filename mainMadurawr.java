@@ -4,7 +4,7 @@ public class mainMadurawr {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         WarungMadura warungMadura = new WarungMadura();
-        KeranjangBelanja keranjang = new KeranjangBelanja();  // Gunakan hanya satu objek keranjang
+        KeranjangBelanja keranjang = new KeranjangBelanja();
 
         int choice;
 
@@ -37,8 +37,9 @@ public class mainMadurawr {
                     keranjang.lihatListBarang();
                     break;
                 case 3:
-                    keranjang.checkout();
-                    warungMadura.tambahTransaksi(keranjang.copy());
+                    keranjang.checkout(keranjang);
+                    warungMadura.tambahTransaksi(keranjang);
+                    keranjang = new KeranjangBelanja();
                     break;
                 case 4:
                     warungMadura.historiTransaksi();
