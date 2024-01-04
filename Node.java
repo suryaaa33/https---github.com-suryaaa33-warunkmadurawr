@@ -1,9 +1,9 @@
 public class Node {
-    Barang barang;
+    WarungMadura warungmadura;
     Node left, right;
 
-    public Node(Barang barang) {
-        this.barang = barang;
+    public Node(WarungMadura warungmadura) {
+        this.warungmadura = warungmadura;
         left = right = null;
     }
 }

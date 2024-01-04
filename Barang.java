@@ -1,11 +1,24 @@
 public class Barang {
     String nama;
     int harga;
-    int stok;
+    int jumlah;
 
-    public Barang(String nama, int harga, int stok) {
+    public Barang(String nama, int harga, int jumlah) {
         this.nama = nama;
         this.harga = harga;
-        this.stok = stok;
+        this.jumlah = jumlah;
+    }
+
+    public int getHarga() {
+        
+        return harga;
+    }
+
+    public int getJumlah() {
+        return jumlah;
+    }
+
+    public String getNamaBarang() {
+        return nama;
     }
 }
